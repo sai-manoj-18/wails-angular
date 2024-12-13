@@ -1,0 +1,46 @@
+{
+    "stocks": [
+        {
+            "stockName":"Affle",
+            "Buyingprice":200,
+            "CurrentMarketPrice":1300,
+            "BuyingDate":"12-12-2019",
+            "Quantity":5
+        },
+        {
+            "stockName":"Idfc",
+            "Buyingprice":55,
+            "CurrentMarketPrice":65,
+            "BuyingDate":"30-08-2024",
+            "Quantity":35
+        },
+        {
+            "stockName":"Hdfc",
+            "Buyingprice":1400,
+            "CurrentMarketPrice":1700,
+            "BuyingDate":"12-12-2022",
+            "Quantity":20
+        },
+        {
+            "stockName":"Bajaj Finance",
+            "Buyingprice":3800,
+            "CurrentMarketPrice":5800,
+            "BuyingDate":"22-10-2020",
+            "Quantity":5
+        },
+        {
+            "stockName":"KPIT",
+            "Buyingprice":900,
+            "CurrentMarketPrice":2400,
+            "BuyingDate":"01-09-2020",
+            "Quantity":10
+        },
+        {
+            "stockName":"IRCTC",
+            "Buyingprice":400,
+            "CurrentMarketPrice":2500,
+            "BuyingDate":"28-04-2022",
+            "Quantity":15
+        }
+    ]
+}

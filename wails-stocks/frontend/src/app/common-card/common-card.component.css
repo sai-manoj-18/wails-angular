@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 400px;
+    margin: 16px;
+    border-color: grey;
+    border-width: medium;
+    box-shadow: -1px -1px 5px darkslateblue;
+  }
+  
+  .example-card-footer {
+    padding: 16px;
+  }
+
+  .stocks-Content{
+      display: flex;
+      flex-direction: column;
+  }

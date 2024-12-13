@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <mat-form-field appearance="fill">
+      <mat-label>Fill form field</mat-label>
+      <input matInput [formControl]="username" placeholder="Enter the username"/>
+    </mat-form-field>
+    <div *ngIf="username.invalid && username.touched" class="errorMsg">
+      <mat-error>username is mandatory</mat-error>
+    </div>
+    <mat-form-field appearance="outline">
+        <mat-label>Fill form field</mat-label>
+        <input matInput [formControl]="password" placeholder="Enter the Password"/>
+    </mat-form-field>
+    <div *ngIf="password.invalid && password.touched" class="errorMsg">
+      <mat-error>Password is mandatory</mat-error>
+    </div>
+    <div *ngIf="credentialError" class="errorMsg">
+      <mat-error>Login credentials are invalid</mat-error>
+    </div>
+    <!-- <button class="btn btn-primary">Login</button> -->
+    <section>
+      <button mat-raised-button (click)="ValidateLogin()">Login</button>
+    </section>
+</div>

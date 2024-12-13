@@ -1,0 +1,15 @@
+<mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+        <mat-card-title>{{headerValue}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="stocks-Content">
+        <div [ngTemplateOutlet]="contentValue"></div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="routeToStocks()">{{buttonValue}}</button>
+    </mat-card-actions>
+</mat-card>
+
+<!-- <ng-content></ng-content>
+<ng-content select="title"></ng-content>
+<ng-content select="body"></ng-content> -->

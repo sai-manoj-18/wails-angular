@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "wails-stocks",
+  "outputfilename": "wails-stocks",
+  "frontend:install": "",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm start",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "sai-manoj-18",
+    "email": "83630501+sai-manoj-18@users.noreply.github.com"
+  }
+}

@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="stockName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Stock Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.stockName}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="Buyingprice">
+          <th mat-header-cell *matHeaderCellDef> Buying Price </th>
+          <td mat-cell *matCellDef="let element"> {{element.Buyingprice}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="CurrentMarketPrice">
+          <th mat-header-cell *matHeaderCellDef> Current Market Price </th>
+          <td mat-cell *matCellDef="let element"> {{element.CurrentMarketPrice}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="BuyingDate">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Buying Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.BuyingDate}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="Quantity">
+            <th mat-header-cell *matHeaderCellDef> Quantity </th>
+            <td mat-cell *matCellDef="let element"> {{element.Quantity}} </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" 
+    showFirstLastButtons aria-label="Select page of periodic elements">
+    </mat-paginator>

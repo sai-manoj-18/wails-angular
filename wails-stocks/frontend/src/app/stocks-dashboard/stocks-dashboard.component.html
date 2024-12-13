@@ -1,0 +1,26 @@
+
+  <app-common-card [headerValue]="'Stocks Dashboard'" [buttonValue]="'Stocks'" [contentValue]="stockTemplate"  (routeEmitting)=rountingToStocks()>
+      <p>testing ng content</p>
+      <p ngProjectAs="body">testing ng content 1</p>
+      <p ngProjectAs="title">testing ng content 2</p>
+  </app-common-card>
+
+  <ng-template #stockTemplate>
+    <div class="stocks-inner-content">
+        <h3>Total netWorth</h3>
+        <span class="stocks-child-Content">{{TotalValueOfStocks}}</span>
+    </div>
+    <div class="stocks-inner-content">
+        <h3>Total Investment</h3>
+        <span class="stocks-child-Content">{{TotalInvestmentOfStocks}}</span>
+    </div>
+    <div class="stocks-inner-content">
+        <h3>Total profit</h3>
+        <span class="stocks-child-Content">{{TotalProfitOfStocks}}</span>
+    </div>
+    <div class="stocks-inner-content">
+        <h3>Total Number of Stocks</h3>
+        <span class="stocks-child-Content">{{stocksData.length}}</span>
+    </div>
+  </ng-template>
+  
